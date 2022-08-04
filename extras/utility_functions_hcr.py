@@ -144,19 +144,8 @@ def display_wrong_predictions(data,subplots=(10,10),figsize=(10,10),show_probabi
 
   '''
 
-  from pathlib import Path 
   from matplotlib.font_manager import FontProperties
 
-  # configure the Hindi font
-  if not os.path.exists("Nirmala.ttf"):
-
-    print("Downloading the Nirmala.tff ...")
-    !wget https://www.wfonts.com/download/data/2016/04/29/nirmala-ui/nirmala-ui.zip
-    !unzip -q nirmala-ui.zip
-
-  else:   
-    print("Nirmala.ttf already exist. Skipping downloading...")
-  
   hindi_font = FontProperties(fname=Path('/content/Nirmala.ttf'))
 
   plt.figure(figsize=figsize)
