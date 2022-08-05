@@ -7,6 +7,17 @@ import numpy as np
 import pandas as pd
 import cv2
 
+# The names of each character, in the correct order for the Hindi Devnagri script
+class_names='''character_1_ka character_2_kha character_3_ga character_4_gha character_5_kna character_6_cha character_7_chha 
+character_8_ja character_9_jha character_10_yna character_11_taamatar character_12_thaa character_13_daa character_14_dhaa 
+character_15_adna character_16_tabala character_17_tha character_18_da character_19_dha character_20_na character_21_pa 
+character_22_pha character_23_ba character_24_bha character_25_ma character_26_yaw character_27_ra character_28_la 
+character_29_waw character_30_motosaw character_31_petchiryakha character_32_patalosaw character_33_ha character_34_chhya 
+character_35_tra character_36_gya digit_0 digit_1 digit_2 digit_3 digit_4 digit_5 digit_6 digit_7 digit_8 digit_9'''.split()
+
+hindi_character = 'क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह ॠ त्र ज्ञ ० १ २ ३ ४ ५ ६ ७ ८ ९'.split()                                                                                                        
+
+
 # 1
 def see_random_picture(target_dir , class_name , display_info = True , return_image_path = False , return_image_array=True):
   '''
