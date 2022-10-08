@@ -1,0 +1,10 @@
+altair==4.2.0
+Pillow==9.2.0
+tensorflow-cpu
+numpy==1.23.3
+streamlit==1.13.0
+opencv-python-headless
+plotly==5.10.0
+streamlit-lottie==0.0.3
+streamlit-option-menu==0.3.2
+matplotlib==3.6.0
